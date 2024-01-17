@@ -21,15 +21,15 @@
     <div class="container">
         <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
             <li class="nav-item" role="presentation">
-                <button class="nav-link active" id="pills-home-tab" data-toggle="pill" data-target="#pills-home"
-                    type="button" role="tab" aria-controls="pills-home" aria-selected="true">Bài Tập 1</button>
+                <button class="nav-link active" id="pills-bt1-tab" data-toggle="pill" data-target="#pills-bt1"
+                    type="button" role="tab" aria-controls="pills-bt1" aria-selected="true">Bài Tập 1</button>
             </li>
             <li class="nav-item" role="presentation">
-                <button class="nav-link" id="pills-profile-tab" data-toggle="pill" data-target="#pills-profile"
-                    type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Bài Tập 2</button>
+                <button class="nav-link" id="pills-bt2-tab" data-toggle="pill" data-target="#pills-bt2"
+                    type="button" role="tab" aria-controls="pills-bt2" aria-selected="false">Bài Tập 2</button>
             </li>
             <li class="nav-item" role="presentation">
-                <button class="nav-link" id="pills-contact-tab" data-toggle="pill" data-target="#pills-contact"
+                <button class="nav-link" id="pills-contact-tab" data-toggle="pill" data-target="#pills-bt3"
                     type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Bài Tập 3</button>
             </li>
             <li class="nav-item" role="presentation">
@@ -42,21 +42,51 @@
             </li>
         </ul>
         <div class="tab-content" id="pills-tabContent">
-            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+            <div class="tab-pane fade show active" id="pills-bt1" role="tabpanel" aria-labelledby="pills-bt1-tab">
                 <h4>Bài Tập 1 : Tính tiền lương Nhân viên</h4>
                 <p>Lương 1 ngày : 100.000 đ</p>
                 <div class="row">
                     <form>
                         <div class="form-group">
                             <label for="">Số Ngày Làm</label>
-                            <input type="number" class="form-control" id="soNgayLuong">
+                            <input type="number" class="form-control" id="soNgayLuong" placeholder="Nhập số ngày làm">
                         </div>
                         <button type="button" class="btn btn-primary" id="btnTinhTienLuongNV">Tính Tiền Lương NV</button>
-                        <p class="alert alert-info" id="txtResultTienLuongNV"></p>
+                        <p class="alert alert-info txtResult" id="txtResultTienLuongNV"></p>
                     </form>
                 </div>
             </div>
-            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+            
+            <div class="tab-pane fade" id="pills-bt2" role="tabpanel" aria-labelledby="pills-bt2-tab">
+                <h4>Bài Tập 2 : Tính giá trị Trung Bình</h4>
+                <p>Viết chương trình nhập 5 số thực</p>
+                <p>Tính giá trị của 5 số này và xuất ra màn hình</p>
+                <div class="row">
+                    <form>
+                        <div class="form-group">
+                            <label for="">Số thứ 1</label>
+                            <input type="number" class="form-control" id="soThu1" placeholder="Nhập số thứ 1">
+                        </div>
+                        <div class="form-group">
+                            <label for="">Số thứ 2</label>
+                            <input type="number" class="form-control" id="soThu2" placeholder="Nhập số thứ 2">
+                        </div>
+                        <div class="form-group">
+                            <label for="">Số thứ 3</label>
+                            <input type="number" class="form-control" id="soThu3" placeholder="Nhập số thứ 3">
+                        </div>
+                        <div class="form-group">
+                            <label for="">Số thứ 4</label>
+                            <input type="number" class="form-control" id="soThu4" placeholder="Nhập số thứ 4">
+                        </div>
+                        <div class="form-group">
+                            <label for="">Số thứ 5</label>
+                            <input type="number" class="form-control" id="soThu5" placeholder="Nhập số thứ 5">
+                        </div>
+                        <button type="button" class="btn btn-primary" id="btnTinhTB">Tính TB</button>
+                        <p class="alert alert-info txtResult" id="txtResultTinhTB"></p>
+                    </form>
+                </div>
             </div>
             <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
             </div>
