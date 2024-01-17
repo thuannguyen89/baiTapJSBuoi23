@@ -37,8 +37,8 @@
                     type="button" role="tab" aria-controls="pills-bt4" aria-selected="false">Bài Tập 4</button>
             </li>
             <li class="nav-item" role="presentation">
-                <button class="nav-link" id="pills-contact-tab" data-toggle="pill" data-target="#pills-contact"
-                    type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Bài Tập 5</button>
+                <button class="nav-link" id="pills-bt5-tab" data-toggle="pill" data-target="#pills-bt5"
+                    type="button" role="tab" aria-controls="pills-bt5" aria-selected="false">Bài Tập 5</button>
             </li>
         </ul>
         <div class="tab-content" id="pills-tabContent">
@@ -128,7 +128,22 @@
                     </form>
                 </div>
             </div>
-            <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+
+            <div class="tab-pane fade" id="pills-bt5" role="tabpanel" aria-labelledby="pills-bt5-tab">
+                <h4>Bài Tập 5 : Tính tổng 2 ký số</h4>
+                <p>Viết chương trình nhập vào 1 số có 2 chữ số  (VD: 12, 44, 83)</p>
+                <p>Tính và xuất ra tổng của 2 ký số đã nhập</p>
+                <div class="row">
+                    <form>
+                        <div class="form-group">
+                            <label for="">Số 2 chữ số</label>
+                            <input type="number" class="form-control" id="so2ChuSo" placeholder="Nhập số có 2 chữ số">
+                        </div>
+                        
+                        <button type="button" class="btn btn-primary" id="btnTong2KySo">Tính Tổng 2 Ký Số</button>
+                        <p class="alert alert-info txtResult" id="txtResultTong2KySo"></p>
+                    </form>
+                </div>
             </div>
         </div>
     </div>

@@ -151,3 +151,50 @@ function tinhChuViDienTichHCN() {
 }
 // Goi ham tinhChuViDienTichHCN khi click button 'btnChuViDienTichHCN'
 document.getElementById('btnChuViDienTichHCN').onclick = tinhChuViDienTichHCN;
+
+
+
+
+/**
+ * Bai 5 : Tinh Tong 2 Ky So
+ * 
+ * Inputs:
+ * so2ChuSo
+ * 
+ * Process:
+ * Function:
+ *   B1: Lấy giá trị từ form
+ *   B2: kiểm tra giá trị số  2 chử số
+ *      Nếu lengh so2ChuSo == 2 :
+ *          Lấy số hàng chục
+ *          Lấy số hàng đơn vị
+ *      => Tính tong2KySo
+ *      Ngược lại => Thông báo người dùng nhập lại số có 2 chữ số
+ *      
+ *   B3: thông báo kết quả
+ * 
+ * Outputs:
+ * tong2KySo
+ */
+ function tinhTong2KySo() {
+    let so2ChuSo = document.getElementById('so2ChuSo').value;
+
+    if (so2ChuSo.length == 2) {
+        // Lấy số  hàng chục
+        let soHangChuc = Math.floor(so2ChuSo / 10);
+
+        // Lấy số hàng đơn vị
+        let soHangDonVi = so2ChuSo % 10;
+
+        // Tính tổng 2 ký số
+        let tong2KySo = soHangChuc + soHangDonVi;
+
+        // Su dung ${} cua ES6 de binding du lieu
+        let txtResult = document.getElementById('txtResultTong2KySo');
+        txtResult.innerHTML = `<br /> Tổng 2 Ký Số là : ${tong2KySo}`;
+    } else {
+        alert('Vui lòng nhập lại số có 2 chữ số.')
+    }
+}
+// Goi ham tinhTong2KySo khi click button 'btnTong2KySo'
+document.getElementById('btnTong2KySo').onclick = tinhTong2KySo;
