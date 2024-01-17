@@ -55,7 +55,7 @@ document.getElementById('btnTinhTienLuongNV').onclick = tinhTienLuongNV;
  * Outputs:
  * soTB
  */
- function tinhTB() {
+function tinhTB() {
     let soThu1 = document.getElementById('soThu1').value;
     let soThu2 = document.getElementById('soThu2').value;
     let soThu3 = document.getElementById('soThu3').value;
@@ -70,3 +70,35 @@ document.getElementById('btnTinhTienLuongNV').onclick = tinhTienLuongNV;
 }
 // Goi ham tinhTB khi click button 'btnTinhTB'
 document.getElementById('btnTinhTB').onclick = tinhTB;
+
+
+
+
+/**
+ * Bai 3 : Quy đổi VNĐ
+ * 
+ * Inputs:
+ * gia1USDSangVND, soTienUSD  
+ * 
+ * Process:
+ * Function:
+ *   B1: Lấy giá trị từ form
+ *   B2: Khai báo giá trị mặc định quy đổi 1 USD sang VND 
+ *    + Lập công thức tính quy đổi
+ *   B3: thông báo kết quả
+ * 
+ * Outputs:
+ * soTienQuyDoiVND
+ */
+const ONE_USD_VND = 23500;
+
+function quyDoiVND() {
+    let soTienUSD = document.getElementById('soTienUSD').value;
+    let soTienQuyDoiVND = soTienUSD * ONE_USD_VND;
+
+    // Su dung ${} cua ES6 de binding du lieu
+    let txtResult = document.getElementById('txtResultQuyDoiVND');
+    txtResult.innerHTML = `<br /> Số tiền quy đổi sang VNĐ là : ${soTienQuyDoiVND.toLocaleString('vi-VN', {style:"currency", currency:"VND"})}`;
+}
+// Goi ham quyDoiVND khi click button 'btnQuyDoiVND'
+document.getElementById('btnQuyDoiVND').onclick = quyDoiVND;

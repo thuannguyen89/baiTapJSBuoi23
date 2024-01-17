@@ -29,8 +29,8 @@
                     type="button" role="tab" aria-controls="pills-bt2" aria-selected="false">Bài Tập 2</button>
             </li>
             <li class="nav-item" role="presentation">
-                <button class="nav-link" id="pills-contact-tab" data-toggle="pill" data-target="#pills-bt3"
-                    type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Bài Tập 3</button>
+                <button class="nav-link" id="pills-bt3-tab" data-toggle="pill" data-target="#pills-bt3"
+                    type="button" role="tab" aria-controls="pills-bt3" aria-selected="false">Bài Tập 3</button>
             </li>
             <li class="nav-item" role="presentation">
                 <button class="nav-link" id="pills-contact-tab" data-toggle="pill" data-target="#pills-contact"
@@ -88,7 +88,24 @@
                     </form>
                 </div>
             </div>
-            <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+            
+            <div class="tab-pane fade" id="pills-bt3" role="tabpanel" aria-labelledby="pills-bt3-tab">
+                <h4>Bài Tập 3 : Quy đổi tiền</h4>
+                <p>Giá 1 USD = 23.500 VNĐ</p>
+                <p>Viết chương trình quy đổi từ USD sang VNĐ</p>
+                <p>Cho người dùng nhập vào số tiền USD</p>
+                <p>Tính và xuất ra số tiền sau quy đổi VNĐ</p>
+                <div class="row">
+                    <form>
+                        <div class="form-group">
+                            <label for="">Số tiền USD</label>
+                            <input type="number" class="form-control" id="soTienUSD" placeholder="Nhập số tiền USD">
+                        </div>
+                        
+                        <button type="button" class="btn btn-primary" id="btnQuyDoiVND">Quy đổi VNĐ</button>
+                        <p class="alert alert-info txtResult" id="txtResultQuyDoiVND"></p>
+                    </form>
+                </div>
             </div>
             <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
             </div>
