@@ -33,8 +33,8 @@
                     type="button" role="tab" aria-controls="pills-bt3" aria-selected="false">Bài Tập 3</button>
             </li>
             <li class="nav-item" role="presentation">
-                <button class="nav-link" id="pills-contact-tab" data-toggle="pill" data-target="#pills-contact"
-                    type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Bài Tập 4</button>
+                <button class="nav-link" id="pills-bt4-tab" data-toggle="pill" data-target="#pills-bt4"
+                    type="button" role="tab" aria-controls="pills-bt4" aria-selected="false">Bài Tập 4</button>
             </li>
             <li class="nav-item" role="presentation">
                 <button class="nav-link" id="pills-contact-tab" data-toggle="pill" data-target="#pills-contact"
@@ -107,7 +107,26 @@
                     </form>
                 </div>
             </div>
-            <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+            
+            <div class="tab-pane fade" id="pills-bt4" role="tabpanel" aria-labelledby="pills-bt4-tab">
+                <h4>Bài Tập 4 : Tính diện tịch và chu vi hình chữ nhật</h4>
+                <p>Viết chương trình nhập vào 2 số : Chiều dài và chiều rộng của HCN</p>
+                <p>Tính và xuất ra diện tích, chu vi của HCN đó</p>
+                <div class="row">
+                    <form>
+                        <div class="form-group">
+                            <label for="">Chiều dài</label>
+                            <input type="number" class="form-control" id="chieuDai" placeholder="Nhập chiều dài">
+                        </div>
+                        <div class="form-group">
+                            <label for="">Chiều rộng</label>
+                            <input type="number" class="form-control" id="chieuRong" placeholder="Nhập chiều rộng">
+                        </div>
+                        
+                        <button type="button" class="btn btn-primary" id="btnChuViDienTichHCN">Tính Chu Vi & Diện Tích HCN</button>
+                        <p class="alert alert-info txtResult" id="txtResultChuViDienTichHCN"></p>
+                    </form>
+                </div>
             </div>
             <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
             </div>

@@ -102,3 +102,52 @@ function quyDoiVND() {
 }
 // Goi ham quyDoiVND khi click button 'btnQuyDoiVND'
 document.getElementById('btnQuyDoiVND').onclick = quyDoiVND;
+
+
+
+
+/**
+ * Bai 4 : Tinh Chu vi và Diện tích HCN
+ * 
+ * Inputs:
+ * chieuDai, chieuRong
+ * 
+ * Process:
+ * Function:
+ *   B1: Lấy giá trị từ form
+ *   B2: kiểm tra giá trị chieuDai 
+ *       kiểm tra giá trị chieuRong
+ *      Nếu chieuDai <= 0 || chieuRong <= 0 => Thông báo người dùng nhập lại chieuDai hoặc chieuRong
+ *      Ngược lại => Tinh chu vi & dien tich
+ *      
+ * 
+ *   B3: thông báo kết quả
+ * 
+ * Outputs:
+ * chuVi, dienTich
+ */
+function tinhChuViDienTichHCN() {
+    let chieuDai = document.getElementById('chieuDai').value;
+    let chieuRong = document.getElementById('chieuRong').value;
+
+    if (chieuDai <= 0) {
+        alert('Vui lòng nhập lại Chiều Dài.');
+    } else if (chieuRong <= 0) {
+        alert('Vui lòng nhập lại Chiều Rộng.')
+    } else {
+        // Tính Chu vi
+        let chuVi = (Number(chieuDai) + Number(chieuRong)) * 2;
+
+        // Tính Diện tích
+        let dienTich = (chieuDai * chieuRong);
+
+        // Su dung ${} cua ES6 de binding du lieu
+        let txtResult = document.getElementById('txtResultChuViDienTichHCN');
+        txtResult.innerHTML = `<br /> Chu vi HCN là : ${chuVi} 
+            <br />
+            Diện tích HCN là : ${dienTich}
+        `;
+    }
+}
+// Goi ham tinhChuViDienTichHCN khi click button 'btnChuViDienTichHCN'
+document.getElementById('btnChuViDienTichHCN').onclick = tinhChuViDienTichHCN;
